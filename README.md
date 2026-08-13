@@ -1,4 +1,3 @@
-index.html,
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +6,12 @@ index.html,
     <title>Hailu Tilahun Kebede - Personal Website</title>
     <style>
         :root {
-            --primary: #1b4332;
-            --accent: #2d6a4f;
-            --light: #f8f9fa;
-            --text: #2b2b2b;
-            --border: #e2e8f0;
+            --primary: #1b4332;       /* Deep Forest Green */
+            --accent: #2d6a4f;        /* Medium Forest Green */
+            --light-green: #d8f3dc;    /* Light Green Accent */
+            --bg-light: #f4f9f5;       /* Very Soft Green Tint Background */
+            --text: #1d2a23;          /* Dark Slate/Greenish Text */
+            --border: #b7e4c7;        /* Soft Green Border */
         }
         
         * {
@@ -37,21 +37,29 @@ index.html,
         header h1 {
             font-size: 2.2rem;
             margin-bottom: 0.5rem;
+            color: #ffffff;
         }
 
         header p {
-            font-size: 1.1rem;
-            color: #d8f3dc;
+            font-size: 1.14rem;
+            color: var(--light-green);
+            font-weight: 500;
         }
 
         .contact-info {
             margin-top: 1rem;
             font-size: 0.95rem;
+            color: #ffffff;
         }
 
         .contact-info a {
-            color: #b7e4c7;
+            color: var(--light-green);
             text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         nav {
@@ -83,14 +91,18 @@ index.html,
 
         section {
             margin-bottom: 2.5rem;
+            background-color: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent);
         }
 
         h2 {
             color: var(--primary);
-            border-bottom: 2px solid var(--accent);
+            border-bottom: 2px solid var(--border);
             padding-bottom: 0.4rem;
             margin-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
         }
 
         .item {
@@ -100,10 +112,11 @@ index.html,
         .item-title {
             font-weight: bold;
             font-size: 1.1rem;
+            color: var(--primary);
         }
 
         .item-sub {
-            color: #555;
+            color: #4a5d4e;
             font-style: italic;
             font-size: 0.95rem;
             margin-bottom: 0.4rem;
@@ -126,19 +139,20 @@ index.html,
         }
 
         .badge {
-            background-color: #e9ecef;
+            background-color: #e8f5e9;
             border: 1px solid var(--border);
-            padding: 0.3rem 0.6rem;
-            border-radius: 4px;
+            color: var(--primary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
             font-size: 0.85rem;
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
             padding: 1.5rem;
-            background-color: var(--light);
-            border-top: 1px solid var(--border);
-            color: #666;
+            background-color: var(--primary);
+            color: var(--light-green);
             font-size: 0.9rem;
         }
     </style>
@@ -147,16 +161,16 @@ index.html,
 
     <header>
         <h1>Hailu Tilahun Kebede</h1>
-        <p>Animal Scientist (MSc) & Project Officer</p>
+        <p>Animal Scientist (MSc) & Researcher</p>
         <div class="contact-info">
-            📍 Addis Ababa, Ethiopia | 📱 (+251) 910204390 | ✉️ <a href="mailto:hailshtilahun@gmail.com">hailshtilahun@gmail.com</a>[cite: 1]
+            📍 Addis Ababa, Ethiopia | 📱 (+251) 910204390 | ✉️ <a href="mailto:hailshtilahun@gmail.com">hailshtilahun@gmail.com</a>
         </div>
     </header>
 
     <nav>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#focus">Focus Areas</a>
+        <a href="#partnerships">Partnership Areas</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education & Leadership</a>
@@ -177,34 +191,35 @@ index.html,
             <h2>Work Experience</h2>
             
             <div class="item">
-                <div class="item-title">Project Officer II</div>
-                <div class="item-sub">01/01/2024 – Present[cite: 1]</div>
-                <ul>
-                    <li>Lead project lifecycles, carbon credit initiatives, climate financing, and MER frameworks[cite: 1].</li>
-                    <li>Design regenerative agriculture, agroecology, biodiversity restoration, and integrated organic farming initiatives[cite: 1].</li>
-                    <li>Drive environmental safeguarding and gender-inclusive projects for women and youth[cite: 1].</li>
-                    <li>Mobilize youth-led climate initiatives for global forums (COP, LCOY)[cite: 1].</li>
-                </ul>
-            </div>
-
-            <div class="item">
                 <div class="item-title">Lecturer & Researcher</div>
-                <div class="item-sub">08/07/2018 – Present[cite: 1]</div>
+                <div class="item-sub">08/07/2018 – Present</div>
                 <ul>
                     <li>Academic instruction in Principles of Genetics, Animal Breeding, Research Methodology, Physiology, and Biotechnology[cite: 1].</li>
                     <li>Advanced statistical computing (SAS, SPSS) and biological data modeling using ANOVA, regression, and correlation analysis[cite: 1].</li>
                     <li>Genomic research focusing on livestock surveys and Genome-Wide Association Studies (GWAS)[cite: 1].</li>
                 </ul>
             </div>
+
+            <div class="item">
+                <div class="item-title">Climate & Livestock Development Specialist</div>
+                <div class="item-sub">01/01/2024 – Present</div>
+                <ul>
+                    <li>Lead project lifecycles, carbon credit initiatives, climate financing, and MER frameworks[cite: 1].</li>
+                    <li>Design regenerative agriculture, agroecology, biodiversity restoration, and integrated organic farming initiatives[cite: 1].</li>
+                    <li>Drive environmental safeguarding and gender-inclusive projects for women and youth[cite: 1].</li>
+                    <li>Mobilize youth-led climate initiatives for global forums[cite: 1].</li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Focus Section -->
-        <section id="focus">
-            <h2>Strategic Focus Areas</h2>
+        <!-- International Partnership Areas Section -->
+        <section id="partnerships">
+            <h2>International Partnership Areas</h2>
             <ul>
-                <li><strong>Climate Resilience & Finance:</strong> Monitoring, Evaluation, and Reporting (MER) frameworks for carbon credits and climate mitigation[cite: 1].</li>
-                <li><strong>Agroecology & Sustainable Farming:</strong> Integrated systems for passion fruit, coffee, aquaculture, and apiculture[cite: 1].</li>
-                <li><strong>Youth & Social Inclusion:</strong> Women and youth empowerment, capacity building, and climate action mobilization[cite: 1].</li>
+                <li><strong>Global Policy Dialogues:</strong> Official African Union (AU) Delegate at the G20 Social Summit on Climate Action & Global Inequity[cite: 1].</li>
+                <li><strong>UN Sustainable Development:</strong> Official Delegate at the 12th United Nations Economic Commission for Africa (UNECA) Regional Forum[cite: 1].</li>
+                <li><strong>International Climate Finance & MER:</strong> Designing frameworks for carbon credit systems, agroecology, and ecosystem restoration[cite: 1].</li>
+                <li><strong>Capacity Building & Technical Transfer:</strong> Collaboration on agricultural technology transfer and community resilience strategies[cite: 1].</li>
             </ul>
         </section>
 
@@ -230,32 +245,32 @@ index.html,
             <ul>
                 <li><strong>Establishment of Honeybee Farm:</strong> Principal project lead[cite: 1].</li>
                 <li><strong>Model Cattle Crush Establishment:</strong> Principal lead across two districts in North Shewa Zone, Oromia[cite: 1].</li>
-                <li><strong>Beekeeping & Hive Technology Assessment:</strong> Staff research project in North Shewa Zone, Oromia[cite: 1].</li>
+                <li><strong>Beekeeping & Hive Technology Assessment:</strong> Staff research project[cite: 1].</li>
                 <li><strong>Estrus Synchronization & Dairy Management:</strong> Applied livestock development study[cite: 1].</li>
             </ul>
         </section>
 
         <!-- Education & Leadership -->
         <section id="education">
-            <h2>Education & Delegations</h2>
+            <h2>Education & Global Delegations</h2>
             
             <div class="item">
                 <div class="item-title">MSc in Animal Breeding and Genetics</div>
-                <div class="item-sub">2015 – 2018[cite: 1]</div>
+                <div class="item-sub">2015 – 2018</div>
             </div>
 
             <div class="item">
                 <div class="item-title">BSc in Animal Science</div>
-                <div class="item-sub">2012 – 2015[cite: 1]</div>
+                <div class="item-sub">2012 – 2015</div>
             </div>
 
             <div class="item">
-                <div class="item-title">Global Delegations & Certifications</div>
+                <div class="item-title">Certifications & Leadership</div>
                 <div class="badge-list">
-                    <span class="badge">UNECA Delegate (2026)</span>[cite: 1]
-                    <span class="badge">G20 Social Summit AU Delegate (2025)</span>[cite: 1]
-                    <span class="badge">Udacity Data & AI Certifications</span>[cite: 1]
-                    <span class="badge">FARM to FARM Certification (USAID)</span>[cite: 1]
+                    <span class="badge">UNECA Delegate (2026)</span>
+                    <span class="badge">AU G20 Social Summit Delegate (2025)</span>
+                    <span class="badge">Udacity Data & AI Certifications</span>
+                    <span class="badge">FARM to FARM Certification (USAID)</span>
                 </div>
             </div>
         </section>
