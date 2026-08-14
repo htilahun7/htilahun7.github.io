@@ -3,282 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hailu Tilahun Kebede - Personal Website</title>
+    <title>Hailu Tilahun Kebede | Animal Breeding & Climate Resilience Specialist</title>
     <style>
         :root {
-            --primary: #1b4332;       /* Deep Forest Green */
-            --accent: #2d6a4f;        /* Medium Forest Green */
-            --light-green: #d8f3dc;    /* Light Green Accent */
-            --bg-light: #f4f9f5;       /* Very Soft Green Tint Background */
-            --text: #1d2a23;          /* Dark Slate/Greenish Text */
-            --border: #b7e4c7;        /* Soft Green Border */
+            --primary: #0f382c;
+            --accent: #2d6a4f;
+            --light-accent: #e8f5e9;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8faf9;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
-        
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
         }
 
         body {
-            color: var(--text);
-            background-color: #ffffff;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
             line-height: 1.6;
         }
 
-        header {
-            background-color: var(--primary);
-            color: white;
-            padding: 3rem 1.5rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-            color: #ffffff;
-        }
-
-        header p {
-            font-size: 1.14rem;
-            color: var(--light-green);
-            font-weight: 500;
-        }
-
-        .contact-info {
-            margin-top: 1rem;
-            font-size: 0.95rem;
-            color: #ffffff;
-        }
-
-        .contact-info a {
-            color: var(--light-green);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
+        /* Navigation */
         nav {
-            background: var(--accent);
-            text-align: center;
+            background: var(--white);
+            box-shadow: var(--shadow);
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
         }
 
-        nav a {
-            color: white;
-            padding: 0.8rem 1.2rem;
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary);
             text-decoration: none;
-            display: inline-block;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            margin-left: 1.5rem;
             font-weight: 500;
             font-size: 0.95rem;
+            transition: color 0.2s;
         }
 
-        nav a:hover {
-            background: #40916c;
+        .nav-links a:hover {
+            color: var(--accent);
         }
 
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1b4332 100%);
+            color: var(--white);
+            padding: 5rem 1.5rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #d8f3dc;
+            margin-bottom: 2rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 1.6rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background-color: #52b788;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: #74c69d;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Main Container */
         .container {
-            max-width: 900px;
-            margin: 2rem auto;
+            max-width: 1100px;
+            margin: 3rem auto;
             padding: 0 1.5rem;
         }
 
-        section {
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary);
             margin-bottom: 2.5rem;
-            background-color: var(--bg-light);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: var(--accent);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* Card Grids */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--accent);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Showcase List */
+        .showcase-item {
+            background: var(--white);
             padding: 1.5rem;
             border-radius: 8px;
-            border-left: 5px solid var(--accent);
-        }
-
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.4rem;
+            box-shadow: var(--shadow);
             margin-bottom: 1rem;
-            font-size: 1.4rem;
+            display: flex;
+            flex-direction: column;
         }
 
-        .item {
-            margin-bottom: 1.5rem;
-        }
-
-        .item-title {
-            font-weight: bold;
+        .showcase-title {
+            font-weight: 700;
             font-size: 1.1rem;
             color: var(--primary);
         }
 
-        .item-sub {
-            color: #4a5d4e;
-            font-style: italic;
-            font-size: 0.95rem;
-            margin-bottom: 0.4rem;
+        .showcase-sub {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
         }
 
-        ul {
-            list-style-type: square;
-            margin-left: 1.5rem;
-        }
-
-        ul li {
-            margin-bottom: 0.4rem;
-        }
-
-        .badge-list {
+        /* Badges */
+        .badge-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
+            gap: 0.6rem;
+            margin-top: 1rem;
         }
 
         .badge {
-            background-color: #e8f5e9;
-            border: 1px solid var(--border);
+            background: var(--light-accent);
             color: var(--primary);
             padding: 0.4rem 0.8rem;
             border-radius: 20px;
             font-size: 0.85rem;
-            font-weight: bold;
+            font-weight: 600;
         }
 
+        /* Footer */
         footer {
+            background: var(--primary);
+            color: #d8f3dc;
             text-align: center;
-            padding: 1.5rem;
-            background-color: var(--primary);
-            color: var(--light-green);
-            font-size: 0.9rem;
+            padding: 2rem 1.5rem;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--white);
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Hailu Tilahun Kebede</h1>
-        <p>Animal Scientist (MSc) & Researcher</p>
-        <div class="contact-info">
-            📍 Addis Ababa, Ethiopia | 📱 (+251) 910204390 | ✉️ <a href="mailto:hailshtilahun@gmail.com">hailshtilahun@gmail.com</a>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Hailu Tilahun Kebede</a>
+            <div class="nav-links">
+                <a href="#expertise">Expertise</a>
+                <a href="#partnerships">Partnerships</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Advancing Animal Genetics & Sustainable Agroecology</h1>
+            <p>MSc Animal Scientist bridging livestock genomic research with climate resilience, regenerative agriculture, and community development[cite: 1].</p>
+            <div class="btn-group">
+                <a href="mailto:hailshtilahun@gmail.com" class="btn btn-primary">Get In Touch</a>
+                <a href="#research" class="btn btn-outline">Explore Research</a>
+            </div>
         </div>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#partnerships">Partnership Areas</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education & Leadership</a>
-    </nav>
-
     <div class="container">
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I am a dedicated Animal Scientist with an MSc in Animal Breeding and Genetics and over 7 years of experience in research, academic instruction, and community development projects[cite: 1]. I specialize in bridging genomic and agricultural research with practical climate adaptation, regenerative agriculture, and inclusive community resilience[cite: 1].
-            </p>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Work Experience</h2>
-            
-            <div class="item">
-                <div class="item-title">Lecturer & Researcher</div>
-                <div class="item-sub">08/07/2018 – Present</div>
-                <ul>
-                    <li>Academic instruction in Principles of Genetics, Animal Breeding, Research Methodology, Physiology, and Biotechnology[cite: 1].</li>
-                    <li>Advanced statistical computing (SAS, SPSS) and biological data modeling using ANOVA, regression, and correlation analysis[cite: 1].</li>
-                    <li>Genomic research focusing on livestock surveys and Genome-Wide Association Studies (GWAS)[cite: 1].</li>
-                </ul>
-            </div>
-
-            <div class="item">
-                <div class="item-title">Climate & Livestock Development Specialist</div>
-                <div class="item-sub">01/01/2024 – Present</div>
-                <ul>
-                    <li>Lead project lifecycles, carbon credit initiatives, climate financing, and MER frameworks[cite: 1].</li>
-                    <li>Design regenerative agriculture, agroecology, biodiversity restoration, and integrated organic farming initiatives[cite: 1].</li>
-                    <li>Drive environmental safeguarding and gender-inclusive projects for women and youth[cite: 1].</li>
-                    <li>Mobilize youth-led climate initiatives for global forums[cite: 1].</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- International Partnership Areas Section -->
-        <section id="partnerships">
-            <h2>International Partnership Areas</h2>
-            <ul>
-                <li><strong>Global Policy Dialogues:</strong> Official African Union (AU) Delegate at the G20 Social Summit on Climate Action & Global Inequity[cite: 1].</li>
-                <li><strong>UN Sustainable Development:</strong> Official Delegate at the 12th United Nations Economic Commission for Africa (UNECA) Regional Forum[cite: 1].</li>
-                <li><strong>International Climate Finance & MER:</strong> Designing frameworks for carbon credit systems, agroecology, and ecosystem restoration[cite: 1].</li>
-                <li><strong>Capacity Building & Technical Transfer:</strong> Collaboration on agricultural technology transfer and community resilience strategies[cite: 1].</li>
-            </ul>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li>
-                    <strong>Hailu Tilahun</strong> (2023). Assessment on rearing and husbandry practices of indigenous goats in North Shewa Zone, Amhara Region, Ethiopia. <em>Journal of Applied Animal Research</em>, 51:1, 242-255[cite: 1].
-                </li>
-                <li>
-                    Yaregal Derbie & <strong>Hailu Tilahun</strong> (2023). Phenotypic characterization of indigenous sheep breeds in the Jimma Zone, Oromia, Ethiopia. <em>Journal of Applied Animal Research</em>, 51:1, 644-652[cite: 1].
-                </li>
-                <li>
-                    <strong>Hailu Tilahun</strong>, Aynalem Haile, Ahmed Seid (2019). Phenotypic Characterization of Indigenous Goats in North Shewa Zone, Amhara Region, Ethiopia. <em>International Journal of Research Studies in Agricultural Sciences (IJRSAS)</em>, 5(7), 44-55[cite: 1].
-                </li>
-            </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Key Projects</h2>
-            <ul>
-                <li><strong>Establishment of Honeybee Farm:</strong> Principal project lead[cite: 1].</li>
-                <li><strong>Model Cattle Crush Establishment:</strong> Principal lead across two districts in North Shewa Zone, Oromia[cite: 1].</li>
-                <li><strong>Beekeeping & Hive Technology Assessment:</strong> Staff research project[cite: 1].</li>
-                <li><strong>Estrus Synchronization & Dairy Management:</strong> Applied livestock development study[cite: 1].</li>
-            </ul>
-        </section>
-
-        <!-- Education & Leadership -->
-        <section id="education">
-            <h2>Education & Global Delegations</h2>
-            
-            <div class="item">
-                <div class="item-title">MSc in Animal Breeding and Genetics</div>
-                <div class="item-sub">2015 – 2018</div>
-            </div>
-
-            <div class="item">
-                <div class="item-title">BSc in Animal Science</div>
-                <div class="item-sub">2012 – 2015</div>
-            </div>
-
-            <div class="item">
-                <div class="item-title">Certifications & Leadership</div>
-                <div class="badge-list">
-                    <span class="badge">UNECA Delegate (2026)</span>
-                    <span class="badge">AU G20 Social Summit Delegate (2025)</span>
-                    <span class="badge">Udacity Data & AI Certifications</span>
-                    <span class="badge">FARM to FARM Certification (USAID)</span>
+        <!-- Core Expertise Section -->
+        <section id="expertise">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Genomics & Animal Breeding</h3>
+                    <p>Specializing in Genome-Wide Association Studies (GWAS), phenotype characterization, and genetic data modeling using SAS, SPSS, and R[cite: 1].</p>
                 </div>
+                <div class="card">
+                    <h3>Climate Resilience & Finance</h3>
+                    <p>Developing MER frameworks for carbon credits, climate adaptation strategies, and ecosystem mitigation pathways[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Sustainable Agroecology</h3>
+                    <p>Designing integrated regenerative agriculture systems combining livestock, organic farming, aquaculture, and apiculture[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Partnerships Section -->
+        <section id="partnerships">
+            <h2 class="section-title">International Partnerships & Engagement</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>UN Sustainable Development</h3>
+                    <p>Delegate at the 12th United Nations Economic Commission for Africa (UNECA) Regional Forum on Sustainable Development[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>African Union G20 Social Summit</h3>
+                    <p>Official AU Delegate contributing to policy dialogues on global climate action, policy equity, and sustainable development[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Global Capacity Building</h3>
+                    <p>FARM to FARM Certified (USAID) and Udacity Data/AI Specialist leading technical technology transfers[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research & Publications Section -->
+        <section id="research">
+            <h2 class="section-title">Featured Publications</h2>
+            <div class="showcase-item">
+                <div class="showcase-title">Assessment on Rearing and Husbandry Practices of Indigenous Goats</div>
+                <div class="showcase-sub">Published in Journal of Applied Animal Research (2023) | Taylor & Francis[cite: 1]</div>
+            </div>
+            <div class="showcase-item">
+                <div class="showcase-title">Phenotypic Characterization of Indigenous Sheep Breeds in Jimma Zone</div>
+                <div class="showcase-sub">Published in Journal of Applied Animal Research (2023)[cite: 1]</div>
+            </div>
+            <div class="showcase-item">
+                <div class="showcase-title">Phenotypic Characterization of Indigenous Goats in North Shewa Zone</div>
+                <div class="showcase-sub">Published in IJRSAS (2019)[cite: 1]</div>
+            </div>
+        </section>
+
+        <!-- Key Applied Projects -->
+        <section id="projects">
+            <h2 class="section-title">Key Projects & Initiatives</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Apiculture Innovation</h3>
+                    <p>Principal lead in establishing university honeybee farms and evaluating modern hive technology preference[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Livestock Management Systems</h3>
+                    <p>Led implementation of model cattle crushes across districts and evaluated estrus synchronization in dairy herds[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Development & Credentials -->
+        <section>
+            <h2 class="section-title">Credentials & Certifications</h2>
+            <div class="badge-container" style="justify-content: center;">
+                <span class="badge">MSc Animal Breeding & Genetics</span>[cite: 1]
+                <span class="badge">BSc Animal Science</span>[cite: 1]
+                <span class="badge">UNECA Delegate (2026)</span>[cite: 1]
+                <span class="badge">AU G20 Social Summit Delegate (2025)</span>[cite: 1]
+                <span class="badge">Udacity AI & Data Fundamentals</span>[cite: 1]
+                <span class="badge">USAID FARM to FARM Certified</span>[cite: 1]
+                <span class="badge">Higher Diploma in Teaching (HDP)</span>[cite: 1]
             </div>
         </section>
 
     </div>
 
-    <footer>
-        <p>&copy; 2026 Hailu Tilahun Kebede. All Rights Reserved.</p>
+    <!-- Contact & Footer -->
+    <footer id="contact">
+        <p style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">Hailu Tilahun Kebede</p>
+        <p>📍 Addis Ababa, Ethiopia | 📱 (+251) 910204390[cite: 1]</p>
+        <p style="margin-top: 0.5rem;">Email: <a href="mailto:hailshtilahun@gmail.com">hailshtilahun@gmail.com</a>[cite: 1]</p>
+        <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">&copy; 2026 All Rights Reserved.</p>
     </footer>
 
 </body>
