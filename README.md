@@ -30,7 +30,7 @@
             line-height: 1.6;
         }
 
-        /* Full bold-green navigation header bar */
+        /* Full dark green navigation header bar */
         nav {
             background: var(--primary);
             position: sticky;
@@ -235,6 +235,41 @@
             line-height: 1.7;
         }
 
+        /* Social Media Buttons Styling */
+        .social-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.75rem 1.4rem;
+            border-radius: 30px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: transform 0.2s, opacity 0.2s;
+            box-shadow: var(--shadow);
+        }
+
+        .social-btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        .social-btn.linkedin { background-color: #0a66c2; }
+        .social-btn.twitter { background-color: #1da1f2; }
+        .social-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .social-btn.whatsapp { background-color: #25d366; }
+        .social-btn.telegram { background-color: #0088cc; }
+        .social-btn.facebook { background-color: #1877f2; }
+
         footer {
             background: var(--primary);
             color: #d8f3dc;
@@ -262,6 +297,7 @@
                 <a href="#partnerships">Partnerships</a>
                 <a href="#research">Research</a>
                 <a href="#projects">Projects</a>
+                <a href="#socials">Social Media</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -453,6 +489,22 @@
                     <span class="tag">Community-Based Development</span>
                     <span class="tag">Youth & Women Empowerment</span>
                     <span class="tag">International R&D Partnerships</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Connect Section -->
+        <section id="socials">
+            <h2 class="section-title">Connect on Social Media</h2>
+            <div class="text-block" style="text-align: center;">
+                <p style="margin-bottom: 1rem;">Follow my work, updates, and climate action research across platforms:</p>
+                <div class="social-grid">
+                    <a href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" class="social-btn linkedin">LinkedIn</a>
+                    <a href="https://twitter.com/YOUR-TWITTER-USERNAME" target="_blank" class="social-btn twitter">X (Twitter)</a>
+                    <a href="https://instagram.com/YOUR-INSTAGRAM-USERNAME" target="_blank" class="social-btn instagram">Instagram</a>
+                    <a href="https://wa.me/251910204390" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+                    <a href="https://t.me/YOUR-TELEGRAM-USERNAME" target="_blank" class="social-btn telegram">Telegram</a>
+                    <a href="https://facebook.com/YOUR-FACEBOOK-USERNAME" target="_blank" class="social-btn facebook">Facebook</a>
                 </div>
             </div>
         </section>
