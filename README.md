@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hailu Tilahun Kebede | Animal Scientist & Climate Specialist</title>
+    <title>Animal Scientist & Climate Specialist Portfolio</title>
     <style>
         :root {
             --primary: #0f382c;
@@ -86,16 +86,10 @@
         }
 
         .hero h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-            color: #ffffff;
-        }
-
-        .hero h2 {
-            font-size: 1.25rem;
+            font-size: 1.8rem;
             color: var(--accent-light);
-            font-weight: 600;
-            margin-bottom: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
         }
 
         .hero p {
@@ -315,9 +309,8 @@
     <!-- Hero Header -->
     <header class="hero" id="home">
         <div class="hero-container">
-            <img src="photo_2025-11-24_14-14-04.jpg" alt="Hailu Tilahun Kebede" class="profile-img">
-            <h1>Hailu Tilahun Kebede</h1>
-            <h2>Animal Scientist | Researcher | Climate & Sustainable Development Specialist</h2>
+            <img src="photo_2025-11-24_14-14-04.jpg" alt="Profile Photo" class="profile-img">
+            <h1>Animal Scientist | Researcher | Climate & Sustainable Development Specialist</h1>
             <p>Connecting Science, Nature, Finance & Markets for Sustainable Development</p>
             <div class="btn-group">
                 <a href="#contact" class="btn btn-primary">Let's Connect</a>
