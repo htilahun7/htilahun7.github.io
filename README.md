@@ -30,13 +30,14 @@
             line-height: 1.6;
         }
 
-        /* Navigation */
+        /* Full bold-green navigation header bar */
         nav {
             background: var(--primary);
             position: sticky;
             top: 0;
             z-index: 1000;
             box-shadow: var(--shadow);
+            border-bottom: 2px solid var(--accent);
         }
 
         .nav-container {
@@ -45,22 +46,23 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 1.5rem;
+            padding: 1.2rem 1.5rem;
         }
 
         .logo {
-            font-weight: 700;
-            font-size: 1.15rem;
+            font-weight: 800;
+            font-size: 1.3rem;
             color: #ffffff;
             text-decoration: none;
+            letter-spacing: -0.3px;
         }
 
         .nav-links a {
             color: #d8f3dc;
             text-decoration: none;
             margin-left: 1.2rem;
-            font-weight: 500;
-            font-size: 0.9rem;
+            font-weight: 600;
+            font-size: 0.95rem;
             transition: color 0.2s;
         }
 
@@ -68,7 +70,7 @@
             color: #ffffff;
         }
 
-        /* Hero Header */
+        /* Hero Banner */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, #1b4332 100%);
             color: #ffffff;
@@ -82,14 +84,14 @@
         }
 
         .hero h1 {
-            font-size: 2.6rem;
+            font-size: 2.8rem;
             font-weight: 800;
             margin-bottom: 0.5rem;
             letter-spacing: -0.5px;
         }
 
         .hero h2 {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--accent-light);
             font-weight: 600;
             margin-bottom: 1.2rem;
@@ -136,7 +138,6 @@
             background: rgba(255, 255, 255, 0.1);
         }
 
-        /* Container & Sections */
         .container {
             max-width: 1100px;
             margin: 3rem auto;
@@ -165,7 +166,6 @@
             border-radius: 2px;
         }
 
-        /* Grids and Cards */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -184,11 +184,6 @@
             color: var(--primary);
             font-size: 1.2rem;
             margin-bottom: 0.8rem;
-        }
-
-        .card p {
-            color: var(--text-sub);
-            font-size: 0.95rem;
         }
 
         .card ul {
@@ -212,7 +207,6 @@
             left: 0;
         }
 
-        /* Tags and Badges */
         .tag-cloud {
             display: flex;
             flex-wrap: wrap;
@@ -231,7 +225,6 @@
             border: 1px solid var(--border);
         }
 
-        /* Text Block Styling */
         .text-block {
             background: var(--card-bg);
             padding: 2rem;
@@ -242,7 +235,6 @@
             line-height: 1.7;
         }
 
-        /* Footer */
         footer {
             background: var(--primary);
             color: #d8f3dc;
@@ -259,7 +251,7 @@
 </head>
 <body>
 
-    <!-- Website Navigation -->
+    <!-- Full Dark Green Top Bar -->
     <nav>
         <div class="nav-container">
             <a href="#" class="logo">Hailu Tilahun Kebede</a>
@@ -275,7 +267,7 @@
         </div>
     </nav>
 
-    <!-- Header Hero -->
+    <!-- Header Hero Banner -->
     <header class="hero" id="home">
         <div class="hero-container">
             <h1>Hailu Tilahun Kebede</h1>
@@ -290,7 +282,6 @@
 
     <div class="container">
 
-        <!-- About Summary -->
         <section id="about">
             <h2 class="section-title">Overview</h2>
             <div class="text-block">
@@ -298,11 +289,9 @@
             </div>
         </section>
 
-        <!-- Expertise Section -->
         <section id="expertise">
             <h2 class="section-title">Expertise</h2>
             <div class="grid">
-
                 <div class="card">
                     <h3>Animal Science & Livestock</h3>
                     <ul>
@@ -374,15 +363,12 @@
                         <li>Sustainable Livelihood Development</li>
                     </ul>
                 </div>
-
             </div>
         </section>
 
-        <!-- Areas of Impact Section -->
         <section id="impact">
             <h2 class="section-title">Areas of Impact</h2>
             <div class="grid">
-
                 <div class="card">
                     <h3>Climate & Carbon</h3>
                     <p>Developing practical approaches to carbon markets, climate finance, mitigation, adaptation, and climate-resilient development, with a focus on creating environmental and economic value.</p>
@@ -412,11 +398,9 @@
                     <h3>Community & Inclusive Development</h3>
                     <p>Working with communities, youth, women, institutions, researchers, governments, and international partners to transform knowledge and resources into inclusive and sustainable development outcomes.</p>
                 </div>
-
             </div>
         </section>
 
-        <!-- Partnerships Section -->
         <section id="partnerships">
             <h2 class="section-title">Partnerships</h2>
             <div class="text-block" style="text-align: center;">
@@ -442,7 +426,6 @@
             </div>
         </section>
 
-        <!-- Research Section -->
         <section id="research">
             <h2 class="section-title">Research</h2>
             <div class="text-block">
@@ -451,7 +434,6 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects">
             <h2 class="section-title">Projects & Initiatives</h2>
             <div class="card">
@@ -475,7 +457,6 @@
             </div>
         </section>
 
-        <!-- Collaboration Call to Action -->
         <section>
             <h2 class="section-title">Collaboration</h2>
             <div class="text-block" style="text-align: center;">
@@ -496,7 +477,6 @@
 
     </div>
 
-    <!-- Contact & Footer -->
     <footer id="contact">
         <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: #ffffff;">Contact Hailu Tilahun Kebede</h2>
         <p style="margin-bottom: 1rem;">📍 Addis Ababa, Ethiopia | 📱 (+251) 910204390</p>
