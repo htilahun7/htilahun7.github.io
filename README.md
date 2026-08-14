@@ -30,7 +30,7 @@
             line-height: 1.6;
         }
 
-        /* Full dark green navigation header bar */
+        /* Navigation header bar */
         nav {
             background: var(--primary);
             position: sticky;
@@ -83,15 +83,8 @@
             margin: 0 auto;
         }
 
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.5px;
-        }
-
         .hero h2 {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             color: var(--accent-light);
             font-weight: 600;
             margin-bottom: 1.2rem;
@@ -235,46 +228,53 @@
             line-height: 1.7;
         }
 
-        /* Social Media Buttons Styling */
+        /* Footer Social Media Styling */
+        .footer-social-title {
+            color: var(--accent-light);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
         .social-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 0.8rem;
             justify-content: center;
-            margin-top: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .social-btn {
             display: inline-flex;
             align-items: center;
-            gap: 0.6rem;
-            padding: 0.75rem 1.4rem;
+            padding: 0.6rem 1.2rem;
             border-radius: 30px;
             color: #ffffff;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             text-decoration: none;
             transition: transform 0.2s, opacity 0.2s;
             box-shadow: var(--shadow);
         }
 
         .social-btn:hover {
-            transform: translateY(-3px);
+            transform: translateY(-2px);
             opacity: 0.9;
         }
 
         .social-btn.linkedin { background-color: #0a66c2; }
-        .social-btn.twitter { background-color: #1da1f2; }
-        .social-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .social-btn.whatsapp { background-color: #25d366; }
+        .social-btn.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .social-btn.telegram { background-color: #0088cc; }
         .social-btn.facebook { background-color: #1877f2; }
+        .social-btn.twitter { background-color: #1da1f2; }
 
         footer {
             background: var(--primary);
             color: #d8f3dc;
             text-align: center;
-            padding: 2.5rem 1.5rem;
+            padding: 3rem 1.5rem 2rem;
             margin-top: 4rem;
         }
 
@@ -286,7 +286,7 @@
 </head>
 <body>
 
-    <!-- Full Dark Green Top Bar -->
+    <!-- Header Navbar -->
     <nav>
         <div class="nav-container">
             <a href="#" class="logo">Hailu Tilahun Kebede</a>
@@ -297,16 +297,14 @@
                 <a href="#partnerships">Partnerships</a>
                 <a href="#research">Research</a>
                 <a href="#projects">Projects</a>
-                <a href="#socials">Social Media</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact">Contacts</a>
             </div>
         </div>
     </nav>
 
-    <!-- Header Hero Banner -->
+    <!-- Header Banner -->
     <header class="hero" id="home">
         <div class="hero-container">
-            <h1>Hailu Tilahun Kebede</h1>
             <h2>Animal Scientist | Researcher | Climate & Sustainable Development Specialist</h2>
             <p>Bridging animal science, agricultural innovation, climate action, biodiversity conservation, carbon finance, sustainable development, and international markets to develop practical solutions for resilient communities, sustainable livelihoods, and a greener future.</p>
             <div class="btn-group">
@@ -493,22 +491,6 @@
             </div>
         </section>
 
-        <!-- Social Media Connect Section -->
-        <section id="socials">
-            <h2 class="section-title">Connect on Social Media</h2>
-            <div class="text-block" style="text-align: center;">
-                <p style="margin-bottom: 1rem;">Follow my work, updates, and climate action research across platforms:</p>
-                <div class="social-grid">
-                    <a href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" class="social-btn linkedin">LinkedIn</a>
-                    <a href="https://twitter.com/YOUR-TWITTER-USERNAME" target="_blank" class="social-btn twitter">X (Twitter)</a>
-                    <a href="https://instagram.com/YOUR-INSTAGRAM-USERNAME" target="_blank" class="social-btn instagram">Instagram</a>
-                    <a href="https://wa.me/251910204390" target="_blank" class="social-btn whatsapp">WhatsApp</a>
-                    <a href="https://t.me/YOUR-TELEGRAM-USERNAME" target="_blank" class="social-btn telegram">Telegram</a>
-                    <a href="https://facebook.com/YOUR-FACEBOOK-USERNAME" target="_blank" class="social-btn facebook">Facebook</a>
-                </div>
-            </div>
-        </section>
-
         <section>
             <h2 class="section-title">Collaboration</h2>
             <div class="text-block" style="text-align: center;">
@@ -529,11 +511,28 @@
 
     </div>
 
+    <!-- Contacts & Footer -->
     <footer id="contact">
-        <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: #ffffff;">Contact Hailu Tilahun Kebede</h2>
-        <p style="margin-bottom: 1rem;">📍 Addis Ababa, Ethiopia | 📱 (+251) 910204390</p>
-        <p>Email: <a href="mailto:hailshtilahun@gmail.com">hailshtilahun@gmail.com</a></p>
-        <p style="margin-top: 2rem; font-size: 0.85rem; opacity: 0.8;">&copy; 2026 Hailu Tilahun Kebede. All Rights Reserved.</p>
+        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: #ffffff;">Contacts</h2>
+        <p style="margin-bottom: 0.5rem; font-size: 1rem;">
+            <strong>Email:</strong> <a href="mailto:hailshtilahun@gmail.com">hailshtilahun@gmail.com</a>
+        </p>
+        <p style="margin-bottom: 1rem; font-size: 1rem;">
+            <strong>WhatsApp / Mobile:</strong> <a href="tel:+251910204390">+251910204390</a>
+        </p>
+
+        <!-- Social Media Links -->
+        <p class="footer-social-title">Follow Me</p>
+        <div class="social-grid">
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" class="social-btn linkedin">LinkedIn</a>
+            <a href="https://wa.me/251910204390" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+            <a href="https://instagram.com/YOUR-INSTAGRAM-USERNAME" target="_blank" class="social-btn instagram">Instagram</a>
+            <a href="https://t.me/YOUR-TELEGRAM-USERNAME" target="_blank" class="social-btn telegram">Telegram</a>
+            <a href="https://facebook.com/YOUR-FACEBOOK-USERNAME" target="_blank" class="social-btn facebook">Facebook</a>
+            <a href="https://twitter.com/YOUR-TWITTER-USERNAME" target="_blank" class="social-btn twitter">Twitter</a>
+        </div>
+
+        <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">&copy; 2026 Hailu Tilahun Kebede. All Rights Reserved.</p>
     </footer>
 
 </body>
