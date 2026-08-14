@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>| Animal Scientist & Climate Specialist</title>
+    <title>Hailu Tilahun Kebede | Animal Scientist & Climate Specialist</title>
     <style>
         :root {
             --primary: #0f382c;
@@ -44,17 +44,9 @@
             max-width: 1100px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             padding: 1.2rem 1.5rem;
-        }
-
-        .logo {
-            font-weight: 800;
-            font-size: 1.3rem;
-            color: #ffffff;
-            text-decoration: none;
-            letter-spacing: -0.3px;
         }
 
         .nav-links a {
@@ -307,8 +299,8 @@
     <!-- Navigation Header -->
     <nav>
         <div class="nav-container">
-            <a href="#home" class="logo">Hailu Tilahun Kebede</a>
             <div class="nav-links">
+                <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#expertise">Expertise</a>
                 <a href="#impact">Areas of Impact</a>
