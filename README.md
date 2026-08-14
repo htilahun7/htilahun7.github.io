@@ -74,13 +74,24 @@
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, #1b4332 100%);
             color: #ffffff;
-            padding: 4.5rem 1.5rem;
+            padding: 4rem 1.5rem;
             text-align: center;
         }
 
         .hero-container {
             max-width: 900px;
             margin: 0 auto;
+        }
+
+        /* Header Profile Image */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-light);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+            margin-bottom: 1.5rem;
         }
 
         .hero h2 {
@@ -305,6 +316,9 @@
     <!-- Header Banner -->
     <header class="hero" id="home">
         <div class="hero-container">
+            <!-- Header Profile Image -->
+            <img src="photo_2025-11-24_14-14-04.jpg" alt="Hailu Tilahun Kebede" class="profile-img">
+            
             <h2>Animal Scientist | Researcher | Climate & Sustainable Development Specialist</h2>
             <p>Bridging animal science, agricultural innovation, climate action, biodiversity conservation, carbon finance, sustainable development, and international markets to develop practical solutions for resilient communities, sustainable livelihoods, and a greener future.</p>
             <div class="btn-group">
