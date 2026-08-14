@@ -30,7 +30,7 @@
             line-height: 1.6;
         }
 
-        /* Navigation header bar */
+        /* Navigation Header */
         nav {
             background: var(--primary);
             position: sticky;
@@ -60,9 +60,9 @@
         .nav-links a {
             color: #d8f3dc;
             text-decoration: none;
-            margin-left: 1.2rem;
+            margin-left: 1rem;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             transition: color 0.2s;
         }
 
@@ -70,7 +70,7 @@
             color: #ffffff;
         }
 
-        /* Hero Banner */
+        /* Hero Header */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, #1b4332 100%);
             color: #ffffff;
@@ -83,7 +83,6 @@
             margin: 0 auto;
         }
 
-        /* Header Profile Image */
         .profile-img {
             width: 160px;
             height: 160px;
@@ -94,8 +93,14 @@
             margin-bottom: 1.5rem;
         }
 
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
         .hero h2 {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             color: var(--accent-light);
             font-weight: 600;
             margin-bottom: 1.2rem;
@@ -142,6 +147,7 @@
             background: rgba(255, 255, 255, 0.1);
         }
 
+        /* Layout Container */
         .container {
             max-width: 1100px;
             margin: 3rem auto;
@@ -170,6 +176,7 @@
             border-radius: 2px;
         }
 
+        /* Grids and Cards */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -239,7 +246,7 @@
             line-height: 1.7;
         }
 
-        /* Footer Social Media Styling */
+        /* Footer & Social Media */
         .footer-social-title {
             color: var(--accent-light);
             font-size: 1.1rem;
@@ -297,10 +304,10 @@
 </head>
 <body>
 
-    <!-- Header Navbar -->
+    <!-- Navigation Header -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">Hailu Tilahun Kebede</a>
+            <a href="#home" class="logo">Hailu Tilahun Kebede</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#expertise">Expertise</a>
@@ -313,16 +320,15 @@
         </div>
     </nav>
 
-    <!-- Header Banner -->
+    <!-- Hero Header -->
     <header class="hero" id="home">
         <div class="hero-container">
-            <!-- Header Profile Image -->
             <img src="photo_2025-11-24_14-14-04.jpg" alt="Hailu Tilahun Kebede" class="profile-img">
-            
+            <h1>Hailu Tilahun Kebede</h1>
             <h2>Animal Scientist | Researcher | Climate & Sustainable Development Specialist</h2>
-            <p>Bridging animal science, agricultural innovation, climate action, biodiversity conservation, carbon finance, sustainable development, and international markets to develop practical solutions for resilient communities, sustainable livelihoods, and a greener future.</p>
+            <p>Connecting Science, Nature, Finance & Markets for Sustainable Development</p>
             <div class="btn-group">
-                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="#contact" class="btn btn-primary">Let's Connect</a>
                 <a href="#impact" class="btn btn-outline">Explore Areas of Impact</a>
             </div>
         </div>
@@ -330,42 +336,65 @@
 
     <div class="container">
 
+        <!-- About Section -->
         <section id="about">
-            <h2 class="section-title">Overview</h2>
+            <h2 class="section-title">About</h2>
             <div class="text-block">
-                <p>I operate at the intersection of livestock genomics, climate finance, regenerative agriculture, and market linkages. By integrating rigorous scientific research with practical community-based development, my work aims to transform climate action into economic value for local communities and global partners alike.</p>
+                <p style="margin-bottom: 1.2rem;">
+                    <strong>Hailu Tilahun Kebede</strong> is an Animal Scientist and Researcher with an MSc in Animal Breeding and Genetics and over eight years of experience in livestock research, academic instruction, and community-based development. His work bridges science, sustainable agriculture, climate action, biodiversity, climate finance, and international markets to develop practical, inclusive, and sustainable solutions. He combines technical expertise with community-focused approaches to improve agricultural productivity, resilience, sustainable livelihoods, and opportunities for farmers, women, and youth.
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    I work at the intersection of science, agricultural innovation, climate action, biodiversity conservation, carbon finance, sustainable development, and international markets. My work connects scientific research and practical implementation to help develop climate-resilient livelihoods, sustainable agricultural systems, nature-positive solutions, and international partnerships.
+                </p>
+                
+                <h3 style="color: var(--primary); margin-bottom: 1rem; font-size: 1.2rem;">At a Glance</h3>
+                <div class="grid">
+                    <div style="background: var(--light-bg); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--accent);">
+                        <strong>Animal Science & Genetics:</strong> Animal breeding, livestock genetics, genomics, GWAS, genetic-resource conservation, and sustainable livestock systems.
+                    </div>
+                    <div style="background: var(--light-bg); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--accent);">
+                        <strong>Climate & Carbon:</strong> Carbon-credit development, climate finance, mitigation, adaptation, climate-smart agriculture, and climate-resilient development.
+                    </div>
+                    <div style="background: var(--light-bg); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--accent);">
+                        <strong>Nature & Agriculture:</strong> Biodiversity conservation, agroforestry, ecosystem restoration, regenerative agriculture, and sustainable land management.
+                    </div>
+                    <div style="background: var(--light-bg); padding: 1rem; border-radius: 6px; border-left: 3px solid var(--accent);">
+                        <strong>Coffee & International Markets:</strong> Sustainable coffee production, value-chain development, export, international market linkage, and agricultural trade partnerships.
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Expertise Section -->
         <section id="expertise">
             <h2 class="section-title">Expertise</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>Animal Science & Livestock</h3>
+                    <h3>01 — Animal Science & Livestock</h3>
                     <ul>
                         <li>Animal Breeding & Genetics</li>
                         <li>Livestock Genomics & GWAS</li>
                         <li>Genetic Resource Conservation</li>
                         <li>Sustainable Livestock Production</li>
                         <li>Climate-Resilient Livestock Systems</li>
+                        <li>Agricultural Research & Innovation</li>
                     </ul>
                 </div>
 
                 <div class="card">
-                    <h3>Climate, Carbon & Sustainable Finance</h3>
+                    <h3>02 — Climate, Carbon & Sustainable Finance</h3>
                     <ul>
                         <li>Carbon Credit Development</li>
                         <li>Climate Finance</li>
-                        <li>Climate Mitigation</li>
-                        <li>Climate Adaptation</li>
+                        <li>Climate Mitigation & Adaptation</li>
                         <li>Climate-Smart Agriculture</li>
                         <li>Climate-Resilient Development</li>
-                        <li>Environmental and Sustainable Investment</li>
+                        <li>Sustainable Investment</li>
                     </ul>
                 </div>
 
                 <div class="card">
-                    <h3>Biodiversity, Agroforestry & Nature</h3>
+                    <h3>03 — Biodiversity, Nature & Restoration</h3>
                     <ul>
                         <li>Biodiversity Conservation</li>
                         <li>Agroforestry</li>
@@ -377,148 +406,163 @@
                 </div>
 
                 <div class="card">
-                    <h3>Agriculture & Food Systems</h3>
+                    <h3>04 — Agriculture & Food Systems</h3>
                     <ul>
                         <li>Sustainable Agriculture</li>
                         <li>Agroecology</li>
-                        <li>Agricultural Research & Innovation</li>
+                        <li>Climate-Smart Production</li>
                         <li>Sustainable Food Systems</li>
                         <li>Community-Based Agriculture</li>
-                        <li>Climate-Smart Production Systems</li>
+                        <li>Sustainable Development Goals</li>
+                        <li>Agricultural Value Chains</li>
                     </ul>
                 </div>
 
                 <div class="card">
-                    <h3>Coffee & International Trade</h3>
+                    <h3>05 — Coffee & Global Trade</h3>
                     <ul>
-                        <li>Coffee Farming and Production</li>
-                        <li>Ethiopian Coffee Value Chains</li>
-                        <li>Coffee Quality and Market Development</li>
+                        <li>Sustainable Coffee Production</li>
                         <li>Coffee Export</li>
                         <li>International Market Linkage</li>
-                        <li>Agricultural Investment and Trade Partnerships</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Research & Inclusive Development</h3>
-                    <ul>
-                        <li>Agricultural Research & Data Analysis</li>
-                        <li>Scientific Innovation & Technology Transfer</li>
-                        <li>Evidence-Based Development</li>
-                        <li>Youth Empowerment & Women’s Inclusion</li>
-                        <li>Capacity Building & International Partnerships</li>
-                        <li>Sustainable Livelihood Development</li>
+                        <li>Agricultural Investment & Trade Partnerships</li>
                     </ul>
                 </div>
             </div>
         </section>
 
+        <!-- Areas of Impact Section -->
         <section id="impact">
             <h2 class="section-title">Areas of Impact</h2>
             <div class="grid">
                 <div class="card">
                     <h3>Climate & Carbon</h3>
-                    <p>Developing practical approaches to carbon markets, climate finance, mitigation, adaptation, and climate-resilient development, with a focus on creating environmental and economic value.</p>
+                    <p>Developing approaches that connect climate action with sustainable finance, including carbon markets, climate mitigation, adaptation, and climate-resilient development.</p>
                 </div>
 
                 <div class="card">
-                    <h3>Biodiversity & Nature</h3>
-                    <p>Supporting biodiversity conservation, agroforestry, ecosystem restoration, sustainable land management, and nature-based solutions that strengthen ecological resilience and community livelihoods.</p>
+                    <h3>Nature & Biodiversity</h3>
+                    <p>Supporting biodiversity conservation, agroforestry, ecosystem restoration, and nature-based solutions that strengthen ecosystems while creating benefits for communities.</p>
                 </div>
 
                 <div class="card">
                     <h3>Sustainable Agriculture</h3>
-                    <p>Promoting climate-smart agriculture, agroecology, regenerative production, sustainable livestock systems, and resilient food value chains.</p>
+                    <p>Promoting agricultural systems that improve productivity, resilience, environmental sustainability, and long-term livelihoods.</p>
                 </div>
 
                 <div class="card">
-                    <h3>Livestock Science & Genetics</h3>
-                    <p>Applying expertise in animal breeding, genetics, genomics, GWAS, genetic-resource conservation, and sustainable livestock production to improve productivity and resilience.</p>
+                    <h3>Livestock & Genetic Resources</h3>
+                    <p>Applying animal science, genetics, genomics, and research to strengthen livestock productivity, resilience, and genetic-resource conservation.</p>
                 </div>
 
                 <div class="card">
-                    <h3>Coffee & International Markets</h3>
-                    <p>Connecting Ethiopia’s agricultural potential with international markets through sustainable coffee production, value-chain development, export, investment, and international commercial partnerships.</p>
+                    <h3>Coffee & Global Markets</h3>
+                    <p>Connecting Ethiopia's agricultural production with international markets, investment opportunities, value-chain development, and sustainable trade.</p>
                 </div>
 
                 <div class="card">
-                    <h3>Community & Inclusive Development</h3>
-                    <p>Working with communities, youth, women, institutions, researchers, governments, and international partners to transform knowledge and resources into inclusive and sustainable development outcomes.</p>
+                    <h3>Inclusive Community Development</h3>
+                    <p>Supporting approaches that create opportunities for youth, women, farmers, communities, researchers, institutions, and private-sector partners.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Partnerships Section -->
         <section id="partnerships">
             <h2 class="section-title">Partnerships</h2>
-            <div class="text-block" style="text-align: center;">
-                <p style="margin-bottom: 1.5rem;"><strong>I work with:</strong></p>
-                <div class="tag-cloud" style="margin-bottom: 2rem;">
+            <div class="text-block">
+                <h3 style="text-align: center; color: var(--primary); margin-bottom: 1rem;">Building International Partnerships for Practical Impact</h3>
+                <p style="text-align: center; margin-bottom: 1.5rem;">I collaborate with organizations and institutions across research, government, development, agriculture, climate, finance, investment, trade, and civil society.</p>
+                
+                <p style="margin-bottom: 0.5rem;"><strong>Potential Collaboration Partners:</strong></p>
+                <div class="tag-cloud" style="margin-bottom: 2rem; justify-content: flex-start;">
                     <span class="tag">Universities & Research Institutions</span>
-                    <span class="tag">Government Institutions</span>
+                    <span class="tag">Governments & Public Institutions</span>
                     <span class="tag">International Organizations</span>
                     <span class="tag">Development Partners</span>
-                    <span class="tag">NGOs & Civil Society</span>
+                    <span class="tag">NGOs & Civil Society Organizations</span>
                     <span class="tag">Private-Sector Companies</span>
                     <span class="tag">Investors & Financial Institutions</span>
                     <span class="tag">Agricultural Producers & Cooperatives</span>
-                    <span class="tag">Climate & Carbon-Market Actors</span>
+                    <span class="tag">Climate & Carbon-Market Organizations</span>
                     <span class="tag">International Buyers & Trading Partners</span>
-                    <span class="tag">Youth & Community Networks</span>
                 </div>
 
-                <p style="margin-bottom: 0.5rem;"><strong>Partnership Focus:</strong></p>
+                <p style="margin-bottom: 0.5rem;"><strong>Partnership Areas:</strong></p>
                 <p style="color: var(--accent); font-weight: 600;">
-                    Research | Climate Action | Agriculture | Biodiversity | Carbon Finance | Investment | Trade | Innovation | Community Development
+                    Research | Climate Action | Carbon Finance | Agriculture | Biodiversity | Investment | Trade | Innovation | Sustainable Development
                 </p>
             </div>
         </section>
 
+        <!-- Research Section -->
         <section id="research">
             <h2 class="section-title">Research</h2>
             <div class="text-block">
-                <p>My research and professional interests focus on the relationship between animal science, agricultural productivity, genetics, climate resilience, biodiversity, sustainable land use, and community development.</p>
-                <p style="margin-top: 1rem;">The goal is to generate evidence and innovations that can be translated into practical solutions for farmers, communities, institutions, and international development partners.</p>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2 class="section-title">Projects & Initiatives</h2>
-            <div class="card">
-                <p style="margin-bottom: 1rem;">My project interests and initiatives focus on driving practical impact across multiple domains:</p>
+                <h3 style="color: var(--primary); margin-bottom: 0.8rem;">Research for Resilient Food Systems and Communities</h3>
+                <p style="margin-bottom: 1.2rem;">My research interests focus on the relationship between: <strong>Animal Science | Genetics | Agriculture | Climate Resilience | Biodiversity | Sustainable Land Use | Community Development</strong></p>
+                <p style="margin-bottom: 1.5rem;">The objective is to translate research and evidence into practical solutions that can benefit farmers, communities, institutions, businesses, and development partners.</p>
+                
+                <h4 style="color: var(--primary); margin-bottom: 0.8rem;">Research Interests</h4>
                 <div class="tag-cloud" style="justify-content: flex-start;">
+                    <span class="tag">Animal Breeding & Genetics</span>
+                    <span class="tag">Livestock Genomics</span>
+                    <span class="tag">Agricultural Innovation</span>
                     <span class="tag">Climate-Smart Agriculture</span>
-                    <span class="tag">Sustainable Livestock Development</span>
-                    <span class="tag">Animal Breeding & Genetic Improvement</span>
-                    <span class="tag">Biodiversity Conservation</span>
-                    <span class="tag">Agroforestry & Ecosystem Restoration</span>
-                    <span class="tag">Carbon-Credit Development</span>
-                    <span class="tag">Climate Finance</span>
-                    <span class="tag">Climate Mitigation & Adaptation</span>
-                    <span class="tag">Sustainable Coffee Production</span>
-                    <span class="tag">Coffee Export & Market Linkage</span>
-                    <span class="tag">Agricultural Investment</span>
-                    <span class="tag">Community-Based Development</span>
-                    <span class="tag">Youth & Women Empowerment</span>
-                    <span class="tag">International R&D Partnerships</span>
+                    <span class="tag">Sustainable Livestock Systems</span>
+                    <span class="tag">Biodiversity & Genetic Resources</span>
+                    <span class="tag">Agroecology</span>
+                    <span class="tag">Climate Resilience</span>
+                    <span class="tag">Sustainable Development</span>
                 </div>
             </div>
         </section>
 
+        <!-- Strategic Projects & Initiatives Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects & Initiatives</h2>
+            <div class="text-block">
+                <p style="margin-bottom: 1.5rem;">My current project interests and initiatives focus on translating ideas into practical, scalable solutions.</p>
+                <div class="grid">
+                    <div class="card" style="border-top-color: var(--accent-light);">
+                        <h3>Climate & Carbon</h3>
+                        <p>Carbon-credit development, climate finance, mitigation, adaptation, and climate-resilient development.</p>
+                    </div>
+                    <div class="card" style="border-top-color: var(--accent-light);">
+                        <h3>Agriculture & Livestock</h3>
+                        <p>Sustainable livestock systems, animal genetic improvement, climate-smart agriculture, and resilient food systems.</p>
+                    </div>
+                    <div class="card" style="border-top-color: var(--accent-light);">
+                        <h3>Nature & Biodiversity</h3>
+                        <p>Biodiversity conservation, agroforestry, ecosystem restoration, and nature-based solutions.</p>
+                    </div>
+                    <div class="card" style="border-top-color: var(--accent-light);">
+                        <h3>Coffee & International Trade</h3>
+                        <p>Sustainable coffee production, value-chain development, export, international market linkage, and agricultural investment.</p>
+                    </div>
+                    <div class="card" style="border-top-color: var(--accent-light); grid-column: 1 / -1;">
+                        <h3>Inclusive Community & Youth Development</h3>
+                        <p>Inclusive development, youth empowerment, women's economic participation, capacity building, and community-based initiatives. Supporting approaches that create opportunities for youth, women, farmers, communities, researchers, institutions, and private-sector partners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collaboration Section -->
         <section>
             <h2 class="section-title">Collaboration</h2>
             <div class="text-block" style="text-align: center;">
-                <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">Let's Build Sustainable Solutions Together</h3>
-                <p style="margin-bottom: 1.5rem;">I welcome collaboration with research institutions, universities, governments, development organizations, investors, private-sector companies, agricultural organizations, climate and carbon-market partners, and international buyers.</p>
-                <p style="margin-bottom: 2rem;">Together, we can connect science, innovation, finance, nature, agriculture, and international markets to create measurable environmental, social, and economic impact.</p>
+                <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">Let's Turn Ideas Into Impact</h3>
+                <p style="margin-bottom: 1.5rem;">I am open to strategic collaboration with organizations and individuals seeking to develop credible, practical, scalable, and sustainable solutions.</p>
                 
+                <p style="margin-bottom: 0.8rem;"><strong>Potential areas of collaboration:</strong></p>
                 <div class="tag-cloud">
                     <span class="tag">Research Collaboration</span>
-                    <span class="tag">Strategic Partnership</span>
-                    <span class="tag">Investment</span>
-                    <span class="tag">Climate Finance</span>
-                    <span class="tag">Agricultural Trade</span>
-                    <span class="tag">International Market Linkage</span>
+                    <span class="tag">Strategic Partnerships</span>
+                    <span class="tag">Climate & Carbon Finance</span>
+                    <span class="tag">Agricultural Investment</span>
+                    <span class="tag">Nature & Biodiversity Projects</span>
+                    <span class="tag">Sustainable Development Initiatives</span>
+                    <span class="tag">International Trade</span>
                 </div>
             </div>
         </section>
@@ -527,12 +571,12 @@
 
     <!-- Contacts & Footer -->
     <footer id="contact">
-        <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: #ffffff;">Contacts</h2>
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem; color: #ffffff;">Let's Connect</h2>
         <p style="margin-bottom: 0.5rem; font-size: 1rem;">
             <strong>Email:</strong> <a href="mailto:hailshtilahun@gmail.com">hailshtilahun@gmail.com</a>
         </p>
-        <p style="margin-bottom: 1rem; font-size: 1rem;">
-            <strong>WhatsApp / Mobile:</strong> <a href="tel:+251910204390">+251910204390</a>
+        <p style="margin-bottom: 1.5rem; font-size: 1rem;">
+            <strong>WhatsApp / Mobile:</strong> <a href="tel:+251910204390">+251 910 204 390</a>
         </p>
 
         <!-- Social Media Links -->
@@ -543,7 +587,7 @@
             <a href="https://instagram.com/YOUR-INSTAGRAM-USERNAME" target="_blank" class="social-btn instagram">Instagram</a>
             <a href="https://t.me/YOUR-TELEGRAM-USERNAME" target="_blank" class="social-btn telegram">Telegram</a>
             <a href="https://facebook.com/YOUR-FACEBOOK-USERNAME" target="_blank" class="social-btn facebook">Facebook</a>
-            <a href="https://twitter.com/YOUR-TWITTER-USERNAME" target="_blank" class="social-btn twitter">Twitter</a>
+            <a href="https://twitter.com/YOUR-TWITTER-USERNAME" target="_blank" class="social-btn twitter">X</a>
         </div>
 
         <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.8;">&copy; 2026 Hailu Tilahun Kebede. All Rights Reserved.</p>
